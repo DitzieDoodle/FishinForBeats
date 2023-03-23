@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ComboManager : MonoBehaviour
 {
@@ -9,16 +10,19 @@ public class ComboManager : MonoBehaviour
 
     public float soundTrackVolume = 0.8f;
     public int comboLevel = 0;
+    public TMPro.TextMeshProUGUI comboLabel;
 
     public void OnBeat()
     {
         comboLevel++;
+        comboLabel.SetText(comboLevel.ToString("D3"));
         UpdateMusic();
     }
 
     public void BeatMissed()
     {
         comboLevel = 0;
+        comboLabel.SetText(comboLevel.ToString("D3"));
         UpdateMusic();
     }
 

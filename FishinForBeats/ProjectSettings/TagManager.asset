@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Beat
   - ComboManager
+  - Enemy
   layers:
   - Default
   - TransparentFX
