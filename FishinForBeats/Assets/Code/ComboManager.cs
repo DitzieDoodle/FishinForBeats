@@ -11,6 +11,7 @@ public class ComboManager : MonoBehaviour
     public float soundTrackVolume = 0.8f;
     public int comboLevel = 0;
     public TMPro.TextMeshProUGUI comboLabel;
+    public AudioSource missed;
 
     public void OnBeat()
     {
@@ -23,6 +24,7 @@ public class ComboManager : MonoBehaviour
     {
         comboLevel = 0;
         comboLabel.SetText(comboLevel.ToString("D3"));
+        missed.Play();
         UpdateMusic();
     }
 

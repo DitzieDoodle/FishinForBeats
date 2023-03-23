@@ -16,6 +16,7 @@ public class ComboBreakerWall : MonoBehaviour
         if (collision.gameObject.CompareTag("Beat"))
         {
             this.comboManager.BeatMissed();
+
         }
     }
 }
