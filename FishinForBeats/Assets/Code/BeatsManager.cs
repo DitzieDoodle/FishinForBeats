@@ -11,6 +11,7 @@ public class BeatsManager : MonoBehaviour
     public int beats=0;
     public GameObject player;
     public TMPro.TextMeshProUGUI beatsLabel;
+    public Animator hudAnim;
 
     private void Awake()
     {
@@ -20,6 +21,7 @@ public class BeatsManager : MonoBehaviour
     public void OnBeat()
     {
         beats++;
+        hudAnim.SetTrigger("HUDBeat");
         beatsLabel.SetText(beats.ToString("D3"));
         this.comboManager.OnBeat();
     }

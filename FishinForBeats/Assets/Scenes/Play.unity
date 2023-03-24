@@ -171,6 +171,7 @@ MonoBehaviour:
   beats: 0
   player: {fileID: 785795350}
   beatsLabel: {fileID: 411168548}
+  hudAnim: {fileID: 1551174307}
 --- !u!4 &1799502 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7509375667906054059, guid: 725048eaedd76c8478518786f40ce299, type: 3}
@@ -1730,7 +1731,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 527
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3988,7 +3989,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 527
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6971,6 +6972,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271655633}
   m_CullTransparentMesh: 1
+--- !u!1 &1280156858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1280156860}
+  - component: {fileID: 1280156859}
+  m_Layer: 0
+  m_Name: ---PP---
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1280156859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280156858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 1d1ce29188f433a458ca23985216ce9e, type: 2}
+--- !u!4 &1280156860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280156858}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.294842, y: -3.0840116, z: -0.22225226}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1283662857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7934,6 +7984,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7509375667906054059, guid: 725048eaedd76c8478518786f40ce299, type: 3}
   m_PrefabInstance: {fileID: 332487013}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1455269918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1455269919}
+  m_Layer: 0
+  m_Name: BonusLight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1455269919
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455269918}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.294842, y: -3.0840116, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1460868901
 GameObject:
   m_ObjectHideFlags: 0
@@ -8555,7 +8636,7 @@ GameObject:
   - component: {fileID: 1543215164}
   - component: {fileID: 1543215165}
   m_Layer: 0
-  m_Name: GlobalLight 2
+  m_Name: UpperLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9559,7 +9640,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 527
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 492b9988436bd45049a9a6bc52ac8fb0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11596,6 +11677,10 @@ PrefabInstance:
       propertyPath: top
       value: 
       objectReference: {fileID: 1631876105}
+    - target: {fileID: 785795357, guid: d88625e7a3515ca45b39de3edc119d14, type: 3}
+      propertyPath: moveDuration
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 1030712274034666285, guid: d88625e7a3515ca45b39de3edc119d14, type: 3}
       propertyPath: m_RootOrder
       value: 5
