@@ -10,6 +10,7 @@ public class Beat : MonoBehaviour
     //public Animator hudAnim;
     public ParticleSystem pop;
     public SpriteRenderer render;
+    public CircleCollider2D col;
 
     private void Awake()
     {
@@ -28,7 +29,8 @@ public class Beat : MonoBehaviour
             pop.Play();
             playerAnim.SetTrigger("Beat");
             //  hudAnim.SetTrigger("HUDBeat");
-           // render.enabled = false;
+            render.enabled = false;
+            col.enabled = false;
             Destroy(this.gameObject);
             
         }

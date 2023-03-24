@@ -166,6 +166,7 @@ MonoBehaviour:
   playerAnim: {fileID: 0}
   pop: {fileID: 6556476580903749361}
   render: {fileID: 7509375667906054058}
+  col: {fileID: 7509375667906054057}
 --- !u!50 &2102261399
 Rigidbody2D:
   serializedVersion: 4
@@ -319,7 +320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3507460488788784637, guid: c625a87fde2b84042a47a798029007e5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.47
+      value: -0.46999997
       objectReference: {fileID: 0}
     - target: {fileID: 3507460488788784637, guid: c625a87fde2b84042a47a798029007e5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -327,7 +328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3507460488788784637, guid: c625a87fde2b84042a47a798029007e5, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.89850557
+      value: 0.85420865
       objectReference: {fileID: 0}
     - target: {fileID: 3507460488788784637, guid: c625a87fde2b84042a47a798029007e5, type: 3}
       propertyPath: m_LocalRotation.x
@@ -339,7 +340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3507460488788784637, guid: c625a87fde2b84042a47a798029007e5, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.4389621
+      value: 0.51993036
       objectReference: {fileID: 0}
     - target: {fileID: 3507460488788784637, guid: c625a87fde2b84042a47a798029007e5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -351,10 +352,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3507460488788784637, guid: c625a87fde2b84042a47a798029007e5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 52.075
+      value: 62.655
       objectReference: {fileID: 0}
-    - target: {fileID: 6819555537152998741, guid: c625a87fde2b84042a47a798029007e5, type: 3}
-      propertyPath: m_SortingOrder
+    - target: {fileID: 8967338079993175320, guid: c625a87fde2b84042a47a798029007e5, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8967338079993175320, guid: c625a87fde2b84042a47a798029007e5, type: 3}
+      propertyPath: TriggerModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8967338079993175320, guid: c625a87fde2b84042a47a798029007e5, type: 3}
+      propertyPath: TriggerModule.primitives.Array.size
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
