@@ -811,7 +811,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -28.000017, y: 0.7}
+  m_AnchoredPosition: {x: -28.000017, y: 3.2}
   m_SizeDelta: {x: 38.231, y: 31.673}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &93717805
@@ -2880,7 +2880,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 29, y: 0}
+  m_AnchoredPosition: {x: 29, y: 2.499998}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &473967741
@@ -3525,7 +3525,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -91.009}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.7, y: -0.3}
+  m_AnchoredPosition: {x: 0.7, y: 2.1999981}
   m_SizeDelta: {x: 38.231, y: 31.673}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &553555500
@@ -5222,6 +5222,86 @@ Transform:
   m_Father: {fileID: 82757702}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &851641292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 851641293}
+  - component: {fileID: 851641295}
+  - component: {fileID: 851641294}
+  m_Layer: 0
+  m_Name: SpawnerTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &851641293
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851641292}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1659857337}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &851641294
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851641292}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &851641295
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851641292}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -3.7722435}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 12.161707}
+  m_EdgeRadius: 0
 --- !u!4 &860435384 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7509375667906054059, guid: 725048eaedd76c8478518786f40ce299, type: 3}
@@ -5454,7 +5534,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  startOnAwake: 1
+  startOnAwake: 0
   repeating: 1
   destroyOnCompletion: 0
 --- !u!114 &913714245
@@ -8774,7 +8854,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280156858}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.294842, y: -3.0840116, z: -0.22225226}
+  m_LocalPosition: {x: 23.294842, y: -6.34, z: -0.22225226}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9704,6 +9784,7 @@ MonoBehaviour:
   comboLabel: {fileID: 1567459509}
   missed: {fileID: 1207123060}
   hudAnim: {fileID: 1551174307}
+  player: {fileID: 0}
 --- !u!1001 &1433293232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11756,7 +11837,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: 31.5}
+  m_AnchoredPosition: {x: -1, y: 34}
   m_SizeDelta: {x: 93.372, y: 12.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1657900422
@@ -11779,7 +11860,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Collect Notes to complete the music
+  m_text: Collect Notes and dodge Sharks!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ce652dc5f4639db4db8ef006e20b53ac, type: 2}
   m_sharedMaterial: {fileID: -4049662094744609865, guid: ce652dc5f4639db4db8ef006e20b53ac, type: 2}
@@ -11887,6 +11968,7 @@ Transform:
   m_Children:
   - {fileID: 1536851714}
   - {fileID: 2057042632}
+  - {fileID: 851641293}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12474,7 +12556,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: -31.1}
+  m_AnchoredPosition: {x: -1, y: -28.600002}
   m_SizeDelta: {x: 93.372, y: 12.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1805746231
@@ -12497,7 +12579,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Higher Combo means better music!
+  m_text: Keep your combo up to complete the song!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ce652dc5f4639db4db8ef006e20b53ac, type: 2}
   m_sharedMaterial: {fileID: -4049662094744609865, guid: ce652dc5f4639db4db8ef006e20b53ac, type: 2}
@@ -13732,7 +13814,7 @@ PrefabInstance:
       objectReference: {fileID: 1631876105}
     - target: {fileID: 785795357, guid: d88625e7a3515ca45b39de3edc119d14, type: 3}
       propertyPath: moveDuration
-      value: 0.35
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 1030712274034666285, guid: d88625e7a3515ca45b39de3edc119d14, type: 3}
       propertyPath: m_RootOrder

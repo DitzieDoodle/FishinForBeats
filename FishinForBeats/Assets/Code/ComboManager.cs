@@ -13,7 +13,14 @@ public class ComboManager : MonoBehaviour
     public TMPro.TextMeshProUGUI comboLabel;
     public AudioSource missed;
     public Animator hudAnim;
+    public GameObject player;
 
+    private int comboStage = 0;
+
+    private void Awake()
+    {
+        this.player = GameObject.FindGameObjectWithTag("Player");
+    }
     public void OnBeat()
     {
         comboLevel++;
@@ -36,6 +43,7 @@ public class ComboManager : MonoBehaviour
 
     void UpdateMusic()
     {
+        this.player.GetComponent<Animator>().SetInteger("ComboBeats", this.comboLevel);
         bool trackOn = false;
         for (int i = levels.Length-1; i >= 0; i--)
         {
@@ -60,6 +68,13 @@ public class ComboManager : MonoBehaviour
                     Debug.Log("Volume up :" + levels[i].audio.name);
                     levels[i].audio.volume = soundTrackVolume;
                     trackOn = true;
+
+                    if(i>this.comboStage)
+                    {
+                        hudAnim.SetTrigger("HUDCombo");
+                    }
+
+                    this.comboStage = i;
                 }
             }
         }
