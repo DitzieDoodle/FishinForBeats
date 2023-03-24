@@ -60,7 +60,6 @@ public class ComboManager : MonoBehaviour
                     Debug.Log("Volume up :" + levels[i].audio.name);
                     levels[i].audio.volume = soundTrackVolume;
                     trackOn = true;
-                    hudAnim.SetTrigger("HUDHeart");
                 }
             }
         }
