@@ -6,6 +6,8 @@ public class Beat : MonoBehaviour
 {
     public BeatsManager beatsManager;
     public AudioSource blubb;
+    public Animator playerAnim;
+    public Animator hudAnim;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -13,6 +15,8 @@ public class Beat : MonoBehaviour
         {
             blubb.Play();
             beatsManager.OnBeat();
+            playerAnim.SetTrigger("Beat");
+            hudAnim.SetTrigger("HUDBeat");
             Destroy(this.gameObject);
         }
     }

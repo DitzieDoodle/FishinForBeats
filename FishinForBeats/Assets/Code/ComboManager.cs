@@ -12,6 +12,7 @@ public class ComboManager : MonoBehaviour
     public int comboLevel = 0;
     public TMPro.TextMeshProUGUI comboLabel;
     public AudioSource missed;
+    public Animator hudAnim;
 
     public void OnBeat()
     {
@@ -59,6 +60,7 @@ public class ComboManager : MonoBehaviour
                     Debug.Log("Volume up :" + levels[i].audio.name);
                     levels[i].audio.volume = soundTrackVolume;
                     trackOn = true;
+                    hudAnim.SetTrigger("HUDHeart");
                 }
             }
         }
