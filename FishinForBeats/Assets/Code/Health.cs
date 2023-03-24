@@ -50,7 +50,8 @@ public class Health : MonoBehaviour
         if (health<=0)
         {
             heart3.SetActive(true);
-        }
+            playerAnim.SetTrigger("Dead");
+;        }
     }
     
 }
