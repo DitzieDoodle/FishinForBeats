@@ -3,11 +3,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
-using DigitalPenguin.Unity;
-
-namespace DigitalPenguin.Unity.Timer
-{
-    /// <summary>
+  /// <summary>
     /// Script taken from this Thread: https://forum.unity.com/threads/inspector-enum-dropdown-box-hide-show-variables.83054/<br/>
     /// Credits go to Mr.Jwolf: https://forum.unity.com/members/mr-jwolf.33930/
     /// </summary>
@@ -200,4 +196,3 @@ namespace DigitalPenguin.Unity.Timer
             }
         }
     }
-}

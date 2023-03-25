@@ -5,8 +5,6 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
-namespace DigitalPenguin.Unity.Timer
-{
     [AddComponentMenu("UniTimer")]
     public class UniTimer : MonoBehaviour
     {
@@ -150,4 +148,3 @@ namespace DigitalPenguin.Unity.Timer
             }
         }
     }
-}

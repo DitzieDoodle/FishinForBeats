@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace DigitalPenguin.Unity.Gating
-{
+
     [AddComponentMenu("AutoMove")]
     public class AutoMove : MonoBehaviour
     {
@@ -104,4 +103,3 @@ namespace DigitalPenguin.Unity.Gating
             return onCollisionTag != null && onCollisionTag.Length > 0;
         }
     }
-}

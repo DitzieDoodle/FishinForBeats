@@ -11,7 +11,7 @@ public class SpawnerTrigger : MonoBehaviour
         if(collision.CompareTag("Player"))
             {
             Debug.Log("Collision w Player");
-            spawnerTimer.GetComponent<DigitalPenguin.Unity.Timer.UniTimer>().StartTimer();
+            spawnerTimer.GetComponent<UniTimer>().StartTimer();
         }
     }
 }
