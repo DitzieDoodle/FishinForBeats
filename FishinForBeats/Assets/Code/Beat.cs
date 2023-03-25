@@ -31,7 +31,7 @@ public class Beat : MonoBehaviour
             //  hudAnim.SetTrigger("HUDBeat");
             render.enabled = false;
             col.enabled = false;
-            Destroy(this.gameObject);
+            Destroy(this.gameObject,3f);
             
         }
     }

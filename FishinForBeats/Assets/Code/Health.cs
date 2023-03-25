@@ -47,10 +47,11 @@ public class Health : MonoBehaviour
             heart2.SetActive(true);
         }
 
-        if (health<=0)
+        if (health <=1)
         {
             heart3.SetActive(true);
-            playerAnim.SetTrigger("Dead");
+            playerAnim.SetBool("IsDead", true);
+            //womp.Play();
 ;        }
     }
     
