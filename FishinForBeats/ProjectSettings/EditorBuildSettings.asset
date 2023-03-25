@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: fd69d86f1ec49aa4295607d27c3a4e72
+  - enabled: 1
+    path: Assets/Scenes/BeatLoser.unity
+    guid: a364320bd5b82a04eb234b6397dc4e56
+  - enabled: 1
+    path: Assets/Scenes/BeatKing.unity
+    guid: 83fc66ccafa99a24b84638c3b7360d80
   m_configObjects: {}
