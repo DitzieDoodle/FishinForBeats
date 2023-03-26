@@ -248,12 +248,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca681176dbef13e46bf8721b6bbff48a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7509375667906054055, guid: 725048eaedd76c8478518786f40ce299, type: 3}
+  prefabEasy: []
+  prefabMedium: []
+  prefabHard: []
   spawnPositions:
   - {fileID: 6818530260035153301}
   - {fileID: 6818530259910433396}
   - {fileID: 6818530260466528714}
   parent: {fileID: 6818530259721347663}
+  beatsManager: {fileID: 0}
+  comboManager: {fileID: 0}
+  juiceA: {fileID: 0}
+  juiceB: {fileID: 0}
+  juiceC: {fileID: 0}
 --- !u!114 &6818530260087610469
 MonoBehaviour:
   m_ObjectHideFlags: 0

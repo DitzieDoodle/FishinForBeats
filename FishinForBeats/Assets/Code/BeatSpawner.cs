@@ -12,23 +12,36 @@ public class BeatSpawner : MonoBehaviour
     public BeatsManager beatsManager;
     public ComboManager comboManager;
 
-    
+    public GameObject juiceA;
+    public GameObject juiceB;
+    public GameObject juiceC;
     public void Spawn()
     {
         GameObject[] spawnArray;
-        if(comboManager.comboLevel>=30)
+        if (comboManager.comboLevel >= 30)
         {
             spawnArray = prefabHard;
+            juiceA.SetActive(false);
+            juiceB.SetActive(false);
+            juiceC.SetActive(true);
         }
 
-        else if(comboManager.comboLevel>=15)
+
+        else if (comboManager.comboLevel >= 15)
         {
+            juiceA.SetActive(false);
+            juiceB.SetActive(true);
+            juiceC.SetActive(false);
             spawnArray = prefabMedium;
+            
         }
 
         else
-        { 
+        {
             spawnArray = prefabEasy;
+            juiceA.SetActive(true);
+            juiceB.SetActive(false);
+            juiceC.SetActive(false);
         }
       
 

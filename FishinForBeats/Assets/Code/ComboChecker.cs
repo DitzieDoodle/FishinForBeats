@@ -8,6 +8,7 @@ public class ComboChecker : MonoBehaviour
     public ComboManager comboManager;
     private int combo;
 
+
     private void Awake()
     {
         this.comboManager = GameObject.FindGameObjectWithTag("ComboManager").GetComponent<ComboManager>();
