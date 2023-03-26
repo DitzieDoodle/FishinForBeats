@@ -10,17 +10,18 @@ public class BeatSpawner : MonoBehaviour
     public Transform[] spawnPositions;
     public Transform parent;
     public BeatsManager beatsManager;
+    public ComboManager comboManager;
 
     
     public void Spawn()
     {
         GameObject[] spawnArray;
-        if(beatsManager.beats>=30)
+        if(comboManager.comboLevel>=30)
         {
             spawnArray = prefabHard;
         }
 
-        else if(beatsManager.beats>=15)
+        else if(comboManager.comboLevel>=15)
         {
             spawnArray = prefabMedium;
         }

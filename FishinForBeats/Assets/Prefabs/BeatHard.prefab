@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: -1, y: 0, z: 0}
-  speed: 5.8
+  speed: 16
   startImmediately: 1
   onCollisionEnter:
     m_PersistentCalls:
