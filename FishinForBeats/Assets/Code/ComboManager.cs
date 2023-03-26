@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using DigitalPenguin.Unity.Persistence;
 
 public class ComboManager : MonoBehaviour
 {
@@ -15,17 +16,29 @@ public class ComboManager : MonoBehaviour
     public Animator hudAnim;
     public GameObject player;
 
+    private int comboStageSaved = 0;
     private int comboStage = 0;
 
     private void Awake()
     {
         this.player = GameObject.FindGameObjectWithTag("Player");
+        comboStageSaved = GetComponent<PlayerPrefInt>().Value;
     }
     public void OnBeat()
     {
         comboLevel++;
         comboLabel.SetText(comboLevel.ToString("D3"));
         UpdateMusic();
+
+        UpdateComboPref();
+    }
+
+    private void UpdateComboPref()
+    {
+        if(comboLevel>=comboStageSaved)
+        {
+            GetComponent<PlayerPrefInt>().Save(comboLevel);
+        }
     }
 
     public void BeatMissed()
